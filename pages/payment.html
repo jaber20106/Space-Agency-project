@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+	<link rel="stylesheet" href="../css/animation.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/png">
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="preloader">
+            <img src="../videos/preloader.gif">
+        </div>
+            <div class="nav-bar">
+                <div class="nav-bar-container">
+                    <img src="../images/logo.png" class="logo hidden">
+    
+                    <nav>
+                        <ul>
+                            <li><a href="shop.html" class="hidden">home</a></li>
+                            <li><a href="mens.html" class="hidden">mens</a></li>
+                            <li><a href="womes.html" class="hidden">womens</a></li>
+                            <li><a href="accessories.html" class="hidden">accessories</a></li>
+                            <li><a href="login.html" class="hidden">account</a></li>
+                        </ul>
+                    </nav>
+    
+                    <a href="cart.html" id="shop-btn" class="button hidden">cart</a>
+    
+                    <img src="../images/iconmonstr-menu-lined-64.png" class="menu">
+    
+                </div>
+            </div>
+    
+    
+    
+        <div class="container">
+            <div class="form-section hidden">
+                <h2>Contact</h2>
+                <input type="email" placeholder="Email" required>
+    
+                <h2>Shipping address</h2>
+                <select required>
+                    <option value="United States">Bangladesh</option>
+                    <!-- Add other country options here -->
+                </select>
+    
+                <div class="name-fields">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+    
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="Apartment, suite, etc. (optional)">
+    
+                <div class="address-fields">
+                    <input type="text" placeholder="City" required>
+                    <select required>
+                        <option value="">State</option>
+                        <option value="">Dhaka</option>
+                        <option value="">Chattogram</option>
+                        <option value="">Rajshahi</option>
+                        <option value="">Khulna</option>
+                        <option value="">Barishal </option>
+                        <option value="">Sylhet</option>
+                        <option value="">Rangpur</option>
+                        <option value="">Mymensingh</option>
+                        <!-- Add state options here -->
+                    </select>
+                    <input type="text" placeholder="ZIP code" required>
+                </div>
+    
+                <input type="tel" placeholder="Phone">
+    
+                <button class="continue-btn btn">Pay</button>
+            </div>
+    
+            <div class="summary-section hidden">
+                <div class="item">
+                    <img src="../images/DRAGON_SCALEMODEL_FRONT_700x.webp" alt="SpaceX IVA Suit Figure">
+                    <div class="summary-content">
+                        <h3>Galaxia IVA SUIT FIGURE - PRE SALE</h3>
+                        <p>$300.00</p>
+                    </div>
+                </div>
+                <input type="text" placeholder="Discount code or gift card" class="discount-field">
+                <button class="apply-btn btn">Apply</button>
+    
+                <div class="totals">
+                    <p>Subtotal: <span>$300.00</span></p>
+                    <p>Shipping + Handling: <span>Calculated at next step</span></p>
+                    <h3>Total: <span>$300.00 USD</span></h3>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="res-nav">
+            <img class="cross" src="../images/iconmonstr-x-mark-lined-64.png">
+
+            <div class="res-nav-container">
+                <a href="../index.html" class="hidden">Home</a>
+                <a href="mens.html" class="hidden">mens</a>
+                <a href="womes.html" class="hidden">womens</a>
+                <a href="accessories.html" class="hidden">accessories</a>
+                <a href="login.html" class="hidden">account</a>
+            </div>
+            <div class="res-nav-btn">
+                <a href="cart.html" target="_blank" class="button hidden">cart</a>
+            </div>
+        </div>
+    
+    
+        <div class="footer">
+            <div class="footer-section-1">
+                <a href="faqs.html"><p>FAQs</p></a>
+                <a href="privacy_policy_shop.html"><p>Privacy Policy</p></a>
+                <a href="terms-and-condition.html"><p>Terms & Conditions</p></a>
+            </div>
+            <div class="footer-section-2">
+                <span>© galaxia store</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../js/payment.js"></script>
+    <script src="../js/nav-bar.js"></script>
+    <script src="../js/preloader.js"></script>
+	<script src="../js/animation.js"></script>
+</body>
+</html>

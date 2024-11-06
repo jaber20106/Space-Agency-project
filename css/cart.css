@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: D-DIN, Arial, sans-serif;
+}
+
+.header-container{
+    position: relative;
+    overflow: hidden;
+}
+.nav-bar{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.nav-bar-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+}
+.logo{
+    width: 12%;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    margin-left:15px ;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.nav-bar-container a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 45px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: white;
+    transition: 0.5s;
+}
+.button:hover::after{
+    height: 100%;
+}
+.button:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: black;
+    position: relative;
+}
+.footer-section-1{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer-section-1 a{
+    text-decoration: none;
+    color: white;
+}
+.footer-section-1 p{
+    background-color: black;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+
+.footer-section-2{
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+}
+.footer-section-2 span{
+    background-color: black;
+    color: rgb(104, 102, 102);
+    text-transform: uppercase;
+}
+
+
+.cart-list h1{
+    text-transform: uppercase;
+    margin: 70px 0 20px 0;
+    text-align: center;
+}
+
+.product-row{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    border-bottom: 0.5px solid rgb(138, 138, 138);
+}
+
+.product-row-img-head{
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-row-img-details-head{
+    width: 400px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+
+.product-quantity-parent-head{
+    width: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-total-head{
+    width: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-row-img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.product-row-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.product-row-img-details{
+    height: 150px;
+    width: 400px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-row-img-details h5{
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.product-row-img-details p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.product-quantity-parent{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.product-total{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-total p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-quantity-child p{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.product-quantity-child a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+.product-quantity-child a:hover{
+    opacity: 0.5;
+}
+.btn{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 45px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    transition: 0.5s;
+}
+.btn:hover::after{
+    height: 100%;
+}
+.btn:hover{
+    color: white;
+}
+
+
+.check-out-content{
+    width: 88%;
+    text-align: right;
+    margin: 20px 0 40px 0;
+}
+
+.check-out-content p{
+    opacity: 0.7;
+    padding: 10px 0 40px 0;
+}
+
+
+
+
+
+.menu{
+    width: 45px;
+    display: none;
+}
+
+
+
+.res-nav{
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    right: -309px;
+    /* right: 0; */
+    transition: 0.5s all ease-in-out;
+}
+.cross{
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.res-nav-container{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.res-nav-container a{
+    flex-basis: 25%;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.res-nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 500px) {
+    nav{
+        display: none;
+    }
+    #shop-btn{
+        display: none;
+    }
+    .logo{
+        flex-basis: 35%;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+
+
+
